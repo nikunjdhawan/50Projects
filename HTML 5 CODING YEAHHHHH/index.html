@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax - Find Your Game Buddy Here!</title>
+    <link rel="shortcut icon" href="pcool.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="valorant.html" />
+    <link rel="stylesheet" href="apex.html">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fortnite.html">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-image: top">
+    <section>
+      
+      <h2 class="layer" data-speed="2">Prallax</h2>
+    </section>
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        this.querySelectorAll(".layer").forEach((layer) => {
+          const speed = layer.getAttribute("data-speed");
+          //console.log(speed);
+
+          const x = (window.innerWidth - e.pageX * speed) / 100;
+          const y = (window.innerHeight - e.pageY * speed) / 100;
+
+          layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+      }
+    </script>
+
+    <div
+      style="
+        position: absolute;
+        font-family: Verdana;
+        color: aquamarine;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+      "
+    >
+      <nav >
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo center">Parallax</a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="sass.html">Play With ME !</a></li>
+            <li><a href="login.html">Login-></a></li>
+            <li class="active"><a href="collapsible.html">Support</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="panel active" style="background-image: url('https://compass-ssl.xbox.com/assets/7e/16/7e16ab6a-ced9-4840-b2d1-4f8e7e769c9d.jpg?n=Minecraft_Page-Hero-1084_2019-Keyart_1920x880_03.jpg')">
+          <h3>Minecraft</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5fda19754fd546497e6494d4%2F0x0.jpg')">
+          <h3>Call Of Duty :  Modern Warfare</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Fortnite_Chapter2Season5_image1600w.jpg')">
+          <h3>Fortnite</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://cdn1.dotesports.com/wp-content/uploads/2020/03/16102141/valorant_jett_duotoned-1-1-1-1.jpg')">
+          <h3>Valorant</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://techinsecs.com/wp-content/uploads/2020/09/1366_2000.jpg')">
+          <h3>Rocket League</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2017/03/24/1331850781120_2/the-stunning-numbers-behind-gta-online')">
+          <h3>GTA : ONLINE</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://i.ytimg.com/vi/7207oT3o2XE/maxresdefault.jpg')">
+          <h3>Call Of Duty : Black Ops Cold War</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://cdn2.downdetector.com/static/uploads/logo/apex-legends.png')">
+          <h3>Apex Legends</h3>
+        </div>
+        
+  
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
